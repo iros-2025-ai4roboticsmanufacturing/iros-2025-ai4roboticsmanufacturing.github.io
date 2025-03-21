@@ -129,8 +129,8 @@ section.smaller {
 
 .profpic .profname {
   text-align: center;
-  font-size: large;
-  height: 20px;
+  font-size: 1.2rem;
+  height: 1.4;
   margin-top: 15px;
   margin-bottom: 5px;
   color: black;
@@ -141,7 +141,9 @@ section.smaller {
 }
 .profpic .institution {
   text-align: center;
-  font-size: 15px;
+  font-size: 1rem;
+  line-height: 1.2; /* Prevents crowding */
+  /* font-size: 15px; */
   height: 60px;
 }
 
