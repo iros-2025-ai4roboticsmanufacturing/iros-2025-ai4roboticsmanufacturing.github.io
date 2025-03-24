@@ -1,372 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>IROS 2025 - Genenrative AI for Robotics and Smart Manufacturing</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Custom styles for this template -->
-    <link href="./css/scrolling-nav.css" rel="stylesheet">
-    <link href="./css/style.css" rel="author stylesheet">
-    <style>
-      .pc-column {
-      width:270px;
-      display:inline-block;
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>IROS 2025 - Genenrative AI for Robotics and Smart Manufacturing</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="./css/scrolling-nav.css" rel="stylesheet">
+  <link href="./css/style.css" rel="author stylesheet">
+  <style>
+    .pc-column {
+      width: 270px;
+      display: inline-block;
       vertical-align: top;
-      }
-      .pc_list_item {
-      display:inline-block;
-      width:200px;
-      }
-    </style>
-  </head>
-  <body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
-      <div class="container bar-container">
-        <a class="title-head" href="#page-top">GenAI4RM</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    }
+
+    .pc_list_item {
+      display: inline-block;
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
+    <div class="container bar-container">
+      <a class="title-head" href="#page-top">GenAI4RM</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
-            </li>
-            <!--li class="nav-item">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
+          </li>
+          <!--li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#callpapers">Call for Papers </a>
             </li-->
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#papers">Accepted Papers</a>
-            </li>
-             <!-- <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#papers">Accepted Papers</a>
+          </li>
+          <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
               </li> -->
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#organizers">Organizers</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#organizers">Organizers</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="headercontainer bg-primary text-white" style="padding: 0%; max-height: none; ">
+    <div style="background-color: rgba(160,160,160,0.0)" class="text-center">
+      <div
+        style="padding-bottom: 6%; padding-top: 6%; background-image: url('./images/background.png'); background-size: cover; background-position: center">
+        <div class="container titlebox" ; style="display: inline-block; background-color:rgba(0,0,0, 0.7); width:auto;">
+          <p style="text-align: center; margin-bottom: 2" class="subtitle">IEEE/RSJ International Conference on
+            Intelligent Robots and Systems (IROS 2025) </p>
+          <p style="text-align: center; margin-bottom: 2" class="title">Workshop on <b></b>Generative AI for Robotics
+            and Smart Manufacturing</b></p>
+          <p style="text-align: center; margin-bottom: 0" class="subtitle"> 20 - 24 October, 2025 | Hangzhou, China</p>
+          <!-- <p style="text-align: center; margin-bottom: 0" class="subtitle">Room: Orion (floor 2), 8:30 am - 12:30 pm | November 9 | Munich, Germany</p> -->
         </div>
       </div>
-    </nav>
-    <header class="headercontainer bg-primary text-white" style="padding: 0%; max-height: none; ">
-      <div style="background-color: rgba(160,160,160,0.0)" class="text-center">
-        <div style="padding-bottom: 6%; padding-top: 6%; background-image: url('./images/background.png'); background-size: cover; background-position: center">
-          <div class="container titlebox"; style="display: inline-block; background-color:rgba(0,0,0, 0.7); width:auto;">
-            <p style="text-align: center; margin-bottom: 2" class="subtitle">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025) </p>
-            <p style="text-align: center; margin-bottom: 2" class="title">Workshop on <b></b>Generative AI for Robotics and Smart Manufacturing</b></p>
-            <p style="text-align: center; margin-bottom: 0" class="subtitle"> 20 - 24 October, 2025 | Hangzhou, China</p>
-            <!-- <p style="text-align: center; margin-bottom: 0" class="subtitle">Room: Orion (floor 2), 8:30 am - 12:30 pm | November 9 | Munich, Germany</p> -->
-          </div>
-        </div>
-      </div>
-    </header>
-    <hr class="half-rule"/>
-    <section id="about" style="padding:70px 0 0 0">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 mx-auto">
-            <!-- div style="justify-content: center; text-align:center;"><img src="https://semrob.github.io/images/semrob_2024_logo.png" width="700px"></div-->
-            <span class=titlesec>Abstract</span>
-            <br>
-            <span>
-              The rapid advancement of generative artificial intelligence (AI) and foundational models, such as large language models (LLMs), is poised to transform the fields of robotics and manufacturing. These advanced AI technologies offer unprecedented capabilities in robot skills, control, interactions, and the development of general-purpose manipulation skills. Simultaneously, they are driving significant advancements in manufacturing systems, industrial digitalization, and automation. However, the deployment of AI-enabled robots at an industrial scale to advance manufacturing remains an open challenge. This workshop seeks to explore the cutting-edge applications of generative AI in these domains.
+    </div>
+  </header>
+  <hr class="half-rule" />
+  <section id="about" style="padding:70px 0 0 0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <!-- div style="justify-content: center; text-align:center;"><img src="https://semrob.github.io/images/semrob_2024_logo.png" width="700px"></div-->
+          <span class=titlesec>Abstract</span>
+          <br>
+          <span>
+            The rapid advancement of generative artificial intelligence (AI) and foundational models, such as large
+            language models (LLMs), is poised to transform the fields of robotics and manufacturing. These advanced AI
+            technologies offer unprecedented capabilities in robot skills, control, interactions, and the development of
+            general-purpose manipulation skills. Simultaneously, they are driving significant advancements in
+            manufacturing systems, industrial digitalization, and automation. However, the deployment of AI-enabled
+            robots at an industrial scale to advance manufacturing remains an open challenge. This workshop seeks to
+            explore the cutting-edge applications of generative AI in these domains.
 
-              In robotics, the focus will be on the application of generative AI and foundational models to enable a generalist robot. AI is accelerating the development of robotic skills, including general-purpose manipulation, allowing robots to perform a wider range of tasks in diverse environments. Generative AI and foundational models are being leveraged to optimize robot-assisted manufacturing systems, drive industrial digitalization, and enable advanced automation. These technologies are at the core of smart manufacturing, where AI-driven decision-making processes lead to more efficient, flexible, and resilient production systems.
-              
-              This workshop is to encourage state-of-the-art and visionary research works on generative AI for robotics and manufacturing. Topics will include but not limited to: AI-powered industrial robotics and automation, foundation models in robotics and manufacturing, and AI-accelerated machine intelligence. 
-              
-              Attendees will have opportunities to engage in face-to-face discussions with renowned researchers, gain hands-on experiences with the latest AI technologies in robotics and manufacturing, and network with researchers from the United States, Europe, and Asia.
-            </span>
+            In robotics, the focus will be on the application of generative AI and foundational models to enable a
+            generalist robot. AI is accelerating the development of robotic skills, including general-purpose
+            manipulation, allowing robots to perform a wider range of tasks in diverse environments. Generative AI and
+            foundational models are being leveraged to optimize robot-assisted manufacturing systems, drive industrial
+            digitalization, and enable advanced automation. These technologies are at the core of smart manufacturing,
+            where AI-driven decision-making processes lead to more efficient, flexible, and resilient production
+            systems.
+
+            This workshop is to encourage state-of-the-art and visionary research works on generative AI for robotics
+            and manufacturing. Topics will include but not limited to: AI-powered industrial robotics and automation,
+            foundation models in robotics and manufacturing, and AI-accelerated machine intelligence.
+
+            Attendees will have opportunities to engage in face-to-face discussions with renowned researchers, gain
+            hands-on experiences with the latest AI technologies in robotics and manufacturing, and network with
+            researchers from the United States, Europe, and Asia.
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="event">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <span class=titlesec>Event Information</span>
+          <span>
+            <!-- This is a primarily in-person workshop, held at the <i>2025 IEEE/RSJ International Conference on Intelligent Robots and Systems</i> (IROS), in Hangzhou, China on <b>20-24 October 2025</b>, starting at <b>08:30 CET</b>. -->
+            This is a primarily in-person workshop, held at the <i>2025 IEEE/RSJ International Conference on Intelligent
+              Robots and Systems</i> (IROS), in Hangzhou, China on <b>20-24 October 2025</b>.
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="highlights" style="padding-top: 20px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <span class="titlesec">Highlights</span>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="./images/highlights/rtx.gif" class="img-fluid fixed-height" alt="Crossformer">
+              <p class="text-center">Generalist Manipulation Policy (<a
+                  href="https://robotics-transformer-x.github.io/">link</a>)
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img src="./images/highlights/crossformer.gif" class="img-fluid fixed-height" alt="Crossformer">
+              <p class="text-center">Generalist Navigation Policy (<a
+                  href="https://crossformer-model.github.io/">link</a>)
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img src="./images/highlights/overcooked.gif" class="img-fluid fixed-height" alt="Human-AI Coordination">
+              <p class="text-center">Human-AI Collaboration (<a
+                  href="https://sites.google.com/view/e3t-overcooked">link</a>)</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <video autoplay muted loop nocontrols playsinline width="100%">
+                <source src="./images/highlights/non_prehensile_tool.mp4" type="video/mp4">
+              </video>
+              <p class="text-center">Industry Non-Prehensile Tool Use (<a
+                  href="https://samanthalhy.github.io/tool_manipulation/">link</a>)</p>
+            </div>
+            <div class="col-md-4">
+              <video autoplay muted loop nocontrols playsinline width="100%">
+                <source src="./images/highlights/right_between_v3_x4_hres_caption.mp4" type="video/mp4">
+              </video>
+              <p class="text-center">Vision-Language-Conditioned Navigation (<a
+                  href="https://vlmaps.github.io/">link</a>)</p>
+            </div>
+            <div class="col-md-4">
+              <video autoplay muted loop nocontrols playsinline width="100%">
+                <source src="./images/highlights/insert_bit_success_h264.mp4" type="video/mp4">
+              </video>
+              <p class="text-center">Manipulation for Manufacturing (<a
+                  href="https://sichaoliukth.github.io/karm/">link</a>)</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <video autoplay muted loop nocontrols playsinline width="100%">
+                <source src="./images/highlights/box_filling_crop.mp4" type="video/mp4">
+              </video>
+              <p class="text-center">Collaborative Box Filling (<a
+                  href="https://www.youtube.com/watch?v=EoG-xTIaw18&ab_channel=HumanRobotInterfacesandInteraction">link</a>)
+              </p>
+            </div>
+            <div class="col-md-4">
+              <video autoplay muted loop nocontrols playsinline width="100%">
+                <source src="./images/highlights/collaborative_movement.mp4" type="video/mp4">
+              </video>
+              <p class="text-center">Collaborative Heavy Lifting (<a
+                  href="https://www.youtube.com/watch?v=Q3sA6YzTaaE&ab_channel=HumanRobotInterfacesandInteraction">link</a>)
+              </p>
+            </div>
+            <div class="col-md-4">
+              <video autoplay muted loop nocontrols playsinline width="100%">
+                <source src="./images/highlights/vidbot_teaser.mp4" type="video/mp4">
+              </video>
+              <p class="text-center">Diffusion-based Mobile Manipulation (<a
+                  href="https://hanzhic.github.io/vidbot-project/">link</a>)</p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section id="event">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 mx-auto">
-            <span class=titlesec>Event Information</span>
-            <span>
-              <!-- This is a primarily in-person workshop, held at the <i>2025 IEEE/RSJ International Conference on Intelligent Robots and Systems</i> (IROS), in Hangzhou, China on <b>20-24 October 2025</b>, starting at <b>08:30 CET</b>. -->
-            This is a primarily in-person workshop, held at the <i>2025 IEEE/RSJ International Conference on Intelligent Robots and Systems</i> (IROS), in Hangzhou, China on <b>20-24 October 2025</b>.
-            </br>
-            </br>
-            <!-- The workshop location is the <b>Orion</b></a> room, in the <a href="https://www.scc-munich.com/en/" target="_blank"><b>Science Congress Center</b></a>, at Technical University of Munich (Garching) campus. You might find the <a href="https://www.corl.org/attending/conference-venue" target="_blank">venue information</a> on the CoRL 2024 website helpful. -->
-            <!--
-            </br>
-            </br>
-            Poster session location: outside the lower right-side doors of <b>Lecture Hall XX</b>.-->
-            </span>
+    </div>
+  </section>
+  <hr class="half-rule" />
+  <section id="speakers">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <span class=titlesec> Invited Speakers</span><br>
+          <div class="row">
+
+            <a href="https://www.oiermees.com/" target="_blank">
+              <div class="profpic speaker xlarge-1 columns">
+                <img src="./images/speakers/oier.jpg" class="figure-img img-fluid ">
+                <p class=profname> Oier Mees </p>
+                <p class=institution> University of California, Berkeley </p>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sebasti%C3%A1n-zudaire-48728432a/" target="_blank">
+              <div class="profpic speaker xlarge-1 columns">
+                <img src="./images/speakers/Sebastian.jpg" class="figure-img img-fluid ">
+                <p class=profname> Sebastian Zudaire </p>
+                <p class=institution> ABB Corporate Research in Sweden </p>
+              </div>
+            </a>
+
+            <a href="https://yalidu.github.io/" target="_blank">
+              <div class="profpic speaker xlarge-1 columns">
+                <img src="./images/speakers/yali.jpg" class="figure-img img-fluid ">
+                <p class=profname> Yali Du </p>
+                <p class=institution> King's College London (KCL) </p>
+              </div>
+            </a>
+
+            <a href="https://www.polyu.edu.hk/me/people/academic-teaching-staff/david-navarro-alarcon-prof/"
+              target="_blank">
+              <div class="profpic speaker xlarge-1 columns">
+                <img src="./images/speakers/david.jpg" class="figure-img img-fluid ">
+                <p class=profname> David Navarro-Alarcon </p>
+                <p class=institution> The Hong Kong Polytechnic University (PolyU) </p>
+              </div>
+            </a>
+
+          </div>
+          <div class="row">
+
+            <a href="https://scholar.google.ch/citations?user=SmGQ48gAAAAJ&hl=de" target="_blank">
+              <div class="profpic speaker xlarge-1 columns">
+                <img src='./images/speakers/stefan.jpg' class="figure-img img-fluid ">
+                <p class=profname> Stefan Leutenegger </p>
+                <p class=institution> ETH Zurich (ETH) </p>
+              </div>
+            </a>
+
+            <a href="https://www.iit.it/people-details/-/people/arash-ajoudani" target="_blank">
+              <div class="profpic speaker xlarge-1 columns">
+                <img src="./images/speakers/arash.jpg" class="figure-img img-fluid ">
+                <p class=profname> Arash Ajoudani </p>
+                <p class=institution> Italian Institute of Technology (IIT) </p>
+              </div>
+            </a>
+
+            <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/MA-Shugen/shugenma" target="_blank">
+              <div class="profpic speaker xlarge-1 columns">
+                <img src="./images/speakers/shugen.jpg" class="figure-img img-fluid ">
+                <p class=profname> Shugen Ma </p>
+                <p class=institution> Hong Kong University of Science and Technology (Guangzhou) </p>
+              </div>
+            </a>
+
+            <a href="https://www.kth.se/profile/lihuiw" target="_blank">
+              <div class="profpic speaker xlarge-1 columns">
+                <img src="./images/speakers/lihui.jpg" class="figure-img img-fluid ">
+                <p class=profname> Lihui Wang </p>
+                <p class=institution> Royal Institute of Technology (KTH)</p>
+              </div>
+            </a>
+
           </div>
         </div>
       </div>
   </section>
-    <hr class="half-rule"/>
-    <section id="speakers">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 mx-auto">
-            <span class=titlesec> Invited Speakers</span><br>
-            <div class="row">
-              
-              <a href="https://www.oiermees.com/" target="_blank">
-                <div class="profpic speaker xlarge-1 columns">
-                  <img  src="./images/speakers/oier.jpg" class="figure-img img-fluid ">
-                  <p class=profname> Oier Mees  </p>
-                  <p class=institution> University of California, Berkeley </p>
-                </div>
-              </a>
-              
-              <a href="https://www.linkedin.com/in/sebasti%C3%A1n-zudaire-48728432a/" target="_blank">
-                <div class="profpic speaker xlarge-1 columns">
-                  <img  src="./images/speakers/Sebastian.jpg" class="figure-img img-fluid ">
-                  <p class=profname> Sebastian Zudaire </p>
-                  <p class=institution> ABB Corporate Research in Sweden </p>
-                </div>
-              </a>
-
-              <a href="https://yalidu.github.io/" target="_blank">
-                <div class="profpic speaker xlarge-1 columns">
-                  <img  src="./images/speakers/yali.jpg" class="figure-img img-fluid ">
-                  <p class=profname> Yali Du </p>
-                  <p class=institution> King's College London (KCL) </p>
-                </div>
-              </a>
-
-              <a href="https://www.polyu.edu.hk/me/people/academic-teaching-staff/david-navarro-alarcon-prof/" target="_blank">
-                <div class="profpic speaker xlarge-1 columns">
-                  <img  src="./images/speakers/david.jpg" class="figure-img img-fluid ">
-                  <p class=profname> David Navarro-Alarcon </p>
-                  <p class=institution> The Hong Kong Polytechnic University (PolyU) </p>
-                </div>
-              </a>
-
-              </div>
-              <div class="row">
-              
-              <a href="https://scholar.google.ch/citations?user=SmGQ48gAAAAJ&hl=de" target="_blank">
-                <div class="profpic speaker xlarge-1 columns">
-                  <img  src='./images/speakers/stefan.jpg' class="figure-img img-fluid ">
-                  <p class=profname> Stefan Leutenegger </p>
-                  <p class=institution> ETH Zurich (ETH) </p>
-                </div>
-              </a>
-
-              <a href="https://www.iit.it/people-details/-/people/arash-ajoudani" target="_blank">
-                <div class="profpic speaker xlarge-1 columns">
-                  <img  src="./images/speakers/arash.jpg" class="figure-img img-fluid ">
-                  <p class=profname> Arash Ajoudani </p>
-                  <p class=institution> Italian Institute of Technology (IIT) </p>
-                </div>
-              </a>
-
-              <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/MA-Shugen/shugenma" target="_blank">
-                <div class="profpic speaker xlarge-1 columns">
-                  <img  src="./images/speakers/shugen.jpg" class="figure-img img-fluid ">
-                  <p class=profname> Shugen Ma </p>
-                  <p class=institution> Hong Kong University of Science and Technology (Guangzhou) </p>
-                </div>
-              </a>
-
-              <a href="https://www.kth.se/profile/lihuiw" target="_blank">
-                <div class="profpic speaker xlarge-1 columns">
-                  <img  src="./images/speakers/lihui.jpg" class="figure-img img-fluid ">
-                  <p class=profname> Lihui Wang </p>
-                  <p class=institution> Royal Institute of Technology (KTH)</p>
-                </div>
-              </a>
-
-            </div>
-          </div>
-        </div>
-    </section>
 
 
-    
-    <hr class="half-rule"/>
-    <section class="">
+
+  <hr class="half-rule" />
+  <section class="">
     <div class="container" id="schedule">
-    <div class="row">
-    <div class="col-md-10 mx-auto">
-    <span class="titlesec"><span></span>Schedule</span>
-    <br>
-    <table class="table table-striped">
-    <tbody>
-    <tr>
-    <th style="width: 21%"> Time </th>
-    </tr>
-    <tr>
-    <td style="width: 21%">	9:00 <td/><td> Organizers <br> <b> Introductory Remarks  </b> </td>
-    </tr>
-    <tr>
-    <td style="width: 21%">	9:10 <td/><td> Keynote 1: <a target="_blank" href="https://www.oiermees.com/"> Oier Mees </a> <br> <b> Generalist Robots in the Era of AI </b>
-    <br>
-    <a data-toggle="collapse" data-target="#abstract1" class="collapsed abstract" aria-expanded="false"> Abstract</a>
-    <div id="abstract1" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
-      Enabling robots to evolve from specialized, task-specific systems to versatile, adaptive generalist agents is an open and challenging problem. The rapid advancements in generative models, such as diffusion models and multimodal foundation models, have shown great potential in the development of generalist robots capable of performing a wide range of tasks across diverse environments. One key aspect of a generalist robot is the embodied multimodal intelligence, which emphasizes the comprehension of language and multisensory inputs, the grounding across different modalities, and the generation of action in environments based on these inputs. Frontier techniques in pre-training, post-training, reinforcement learning (RL), chain-of-thought reasoning, and simulation for multimodal robotic foundation models will be covered in this workshop, providing more insights on training generalizable and adaptive generative policies to the community.
-    </div>
-    </td>
-    </tr>
-    <tr>
-    <td style="width: 21%">	9:35 <td/><td> Keynote 2: <a target="_blank" href="https://www.oiermees.com/">  David Navarro-Alarcon </a><br> <b> Non-Prehensile Tool-Object Manipulation by Integrating LLM-
-      Based Planning and Manoeuvrability-Driven Controls</b>
-    <br>
-    <a data-toggle="collapse" data-target="#abstract3" class="collapsed abstract" aria-expanded="false"> Abstract</a>
-    <div id="abstract3" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
-      Tool use isn't just for humans anymore — we've long known that animals like crows can manipulate objects with remarkable skill. Yet getting robots to handle tools with similar dexterity remains a major challenge. In this talk, I'll present our current efforts in combining Large Language Models with visual feedback to enable robots to understand and execute tool-based tasks. Our method translates natural language instructions into concrete motion sequences, guided by a new tool affordance model that helps the robot navigate even tight spaces. I'll demonstrate how this hybrid approach bridges the gap between human commands and robotic actions, bringing us closer to more adaptable and capable robotic systems. Through experimental results, I'll show how our methodology performs across different manipulation scenarios, highlighting both its current capabilities and future potential.
-    </div>
-    </td>
-    </tr>
-    
-    <tr>
-    <td style="width: 21%">	10:00 <td/><td> Spotlight Talk I</td>
-    </tr>
-    <tr>
-    <td style="width: 21%">	10:10 <td/><td> Coffee Break, Socializing, Posters </td>
-    </tr>
-    <tr>
-    <td style="width: 21%">	10:40 <td/><td> Keynote 3: <a target="_blank" href="https://www.oiermees.com/">  Stefan Leutenegger </a> <br> <b> Real-World Mobile Robotics: from Perception to Navigation and
-      Control in the Age of AI </b>
-    <br>
-    <a data-toggle="collapse" data-target="#abstract5" class="collapsed abstract" aria-expanded="false"> Abstract</a>
-    <div id="abstract5" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
-    To power the next generation mobile robots and drones, the field of spatial perception has made much progress from robust multi-sensor SLAM to dense, semantic, and object-level maps, with the aim of understanding open-ended environments as a basis for mobile robot navigation and environment interaction. I will show recent progress in reliable and real-time state estimation and 3D scene understanding using vision, LiDAR, IMUs, and more. Scenes to be reconstructed may contain dynamic objects and even people, whose poses, postures, and motions we can estimate in a tightly-coupled manner. In our works, we fully embrace the power of machine learning-based approaches, but typically integrated in modular, complex robotic systems that may include model-based methods as well. Our approaches are demonstrated as crucial enablers of a range of robot applications, from mobile manipulation on construction sites to dronesexploring obstructed indoor spaces or flying through the forest.
-    </div>
-    </td>
-    </tr>
-    <tr>
-    <td style="width: 21%">	11:05 <td/><td> Keynote 4: <a target="_blank" href="https://www.oiermees.com/">  Shugen Ma  </a> <br> <b> Bioinspired Intelligent Snake Robots — Embodied Intelligence in
-      a Multi-DOF Robot </b>
-    <br>
-    <a data-toggle="collapse" data-target="#abstract6" class="collapsed abstract" aria-expanded="false"> Abstract</a>
-    <div id="abstract6" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
-    Nature systems that have bodies with many degrees of freedom are often considered the ultimate models for machines. To confer the motion performance advantage of animal systems on robotic machines, we conducted in-depth studies on the motion characteristics of biological systems at the biomechanical level. We then used the insights that we obtained to develop intelligent biomimetic robots to achieve "intelligence," "environment adaptation," "flexibility," and "energy-saving." In this talk, I will introduce the bioinspired snake robots we have developed and discuss the evolution of their control methods, from shape-based to neural oscillator-based and then to embodied intelligence, to endow snake robots with motion intelligence.
-    </div>
-    </td>
-    </tr>
-    <tr>
-    <td style="width: 21%">	11:30 <td/><td> Panel Discussion <br> <b>Panelists:</b> Oier Mees, David Navarro-Alarcon, Stefan Leutenegger, Shugen Ma </td>
-    </tr>
-    <tr>
-      <td style="width: 21%">	12:00 <td/><td> Lunch  </td>
-    </tr>
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <span class="titlesec"><span></span>Schedule</span>
+          <br>
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <th style="width: 21%"> Time </th>
+              </tr>
+              <tr>
+                <td style="width: 21%"> 9:00
+                  <td />
+                <td> Organizers <br> <b> Introductory Remarks </b> </td>
+              </tr>
+              <tr>
+                <td style="width: 21%"> 9:10
+                  <td />
+                <td> Keynote 1: <a target="_blank" href="https://www.oiermees.com/"> Oier Mees </a> <br> <b> Generalist
+                    Robots in the Era of AI </b>
+                  <br>
+                  <a data-toggle="collapse" data-target="#abstract1" class="collapsed abstract" aria-expanded="false">
+                    Abstract</a>
+                  <div id="abstract1" class="news collapse" style="margin-top: 10px; height: 22px;"
+                    aria-expanded="false">
+                    Enabling robots to evolve from specialized, task-specific systems to versatile, adaptive generalist
+                    agents is an open and challenging problem. The rapid advancements in generative models, such as
+                    diffusion models and multimodal foundation models, have shown great potential in the development of
+                    generalist robots capable of performing a wide range of tasks across diverse environments. One key
+                    aspect of a generalist robot is the embodied multimodal intelligence, which emphasizes the
+                    comprehension of language and multisensory inputs, the grounding across different modalities, and
+                    the generation of action in environments based on these inputs. Frontier techniques in pre-training,
+                    post-training, reinforcement learning (RL), chain-of-thought reasoning, and simulation for
+                    multimodal robotic foundation models will be covered in this workshop, providing more insights on
+                    training generalizable and adaptive generative policies to the community.
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 21%"> 9:35
+                  <td />
+                <td> Keynote 2: <a target="_blank" href="https://www.oiermees.com/"> David Navarro-Alarcon </a><br> <b>
+                    Non-Prehensile Tool-Object Manipulation by Integrating LLM-
+                    Based Planning and Manoeuvrability-Driven Controls</b>
+                  <br>
+                  <a data-toggle="collapse" data-target="#abstract3" class="collapsed abstract" aria-expanded="false">
+                    Abstract</a>
+                  <div id="abstract3" class="news collapse" style="margin-top: 10px; height: 22px;"
+                    aria-expanded="false">
+                    Tool use isn't just for humans anymore — we've long known that animals like crows can manipulate
+                    objects with remarkable skill. Yet getting robots to handle tools with similar dexterity remains a
+                    major challenge. In this talk, I'll present our current efforts in combining Large Language Models
+                    with visual feedback to enable robots to understand and execute tool-based tasks. Our method
+                    translates natural language instructions into concrete motion sequences, guided by a new tool
+                    affordance model that helps the robot navigate even tight spaces. I'll demonstrate how this hybrid
+                    approach bridges the gap between human commands and robotic actions, bringing us closer to more
+                    adaptable and capable robotic systems. Through experimental results, I'll show how our methodology
+                    performs across different manipulation scenarios, highlighting both its current capabilities and
+                    future potential.
+                  </div>
+                </td>
+              </tr>
 
-    <tr>
-      <td style="width: 21%">	13:00 <td/><td> Keynote 5: <a target="_blank" href="https://www.oiermees.com/">  Lihui Wang </a> <br> <b> From AI to AI-enabled Manufacturing </b>
-      <br>
-      <a data-toggle="collapse" data-target="#abstract1" class="collapsed abstract" aria-expanded="false"> Abstract</a>
-      <div id="abstract1" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
-      Smart manufacturing depends on the timely acquisition, distribution, and utilisation of information from machines and processes on manufacturing shop floors. This is especially true for factories of the future. Effective information sharing can improve production quality, reliability, resource efficiency and the recyclability of end-of-life products. Smart manufacturing built on digitalisation also aims for better sustainability. As emerging infrastructures, cyber-physical systems and cloud manufacturing provide new opportunities to achieve the goals of smart manufacturing, where digital twin and human-robot collaboration add values to manufacturing operations. For the sake of the audience with diverse background, the following topics will be covered, 1) latest advancement and future opportunities in smart manufacturing; 2) showcases of remote monitoring and control, and human-robot collaboration. While advanced technologies show great promise, challenges and future trends remain to be identified and will be highlighted in this introductory presentation, followed by a panel discussion.
-      </div>
-      </td>
-      </tr>
-      <tr>
-      <td style="width: 21%">	13:25 <td/><td> Keynote 6: <a target="_blank" href="https://www.oiermees.com/">  Arash Ajoudani </a> <br> <b> Sensor Substitution for Intelligent Manipulation using Machine
-        Learning </b>
-      <br>
-      <a data-toggle="collapse" data-target="#abstract3" class="collapsed abstract" aria-expanded="false"> Abstract</a>
-      <div id="abstract3" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
-      Mobile manipulators are increasingly deployed in complex environments, where effective perception and control are crucial for interaction. However, equipping every robot with a full suite of sensors is often impractical due to cost and design constraints. This challenge is particularly evident in non-prehensile manipulation tasks—such as pushing, sliding, or rolling objects—where high-fidelity sensory feedback can significantly impact performance. In this talk, I will discuss how AI-driven approaches can enable robots to adapt to varying sensor configurations and improve non-prehensile manipulation. A key challenge arises when a robot trained with rich sensory inputs, such as tactile skin, needs to be replaced or augmented by a system with a more limited sensor set, like LiDAR or RGB-D cameras. To address this, we propose a machine learning framework that allows robots to substitute missing sensory inputs by learning a mapping between available perception data and the information provided by absent sensors. Beyond sensor substitution, AI models can enhance non-prehensile manipulation by learning robust policies that generalize across different sensing modalities and task variations. I will present experimental results demonstrating how mobile manipulators can leverage AI to perform complex pushing tasks with limited sensing, achieving performance comparable to or even exceeding that of robots using direct tactile feedback. This approach paves the way for more adaptable and cost-effective robotic systems capable of learning and optimizing their interactions in diverse environments.
-      </div>
-      </td>
-      </tr>
-      
-      <tr>
-      <td style="width: 21%">	13:50 <td/><td> Spotlight Talk II</td>
-      </tr>
-      <tr>
-      <td style="width: 21%">	14:00 <td/><td> Coffee Break, Socializing, Posters </td>
-      </tr>
-      <tr>
-      <td style="width: 21%">	14:30 <td/><td> Keynote 7: <a target="_blank" href="https://www.oiermees.com/">  Yali Du </a> <br> <b> RL/LLM for Multi-Agent Decision-Making and Robotics </b>
-      <br>
-      <a data-toggle="collapse" data-target="#abstract7" class="collapsed abstract" aria-expanded="false"> Abstract</a>
-      <div id="abstract5" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
-      From collaborative industrial robots to personal AI assistants, the integration of AI into our daily lives highlights the critical need for effective and reliable coordination among agents, as well as between agents and humans. This challenge centers on creating agents that not only align with user intentions but also possess the flexibility to adapt to evolving circumstances, such as the introduction of novel agents. The pursuit of multi-agent cooperation extends beyond individual interactions to encompass broader societal considerations. In this talk, I will discuss the challenges of cooperative AI, and our contributions on multi-agent cooperation, human-ai coordination and cooperative alignments.
-      </div>
-      </td>
-      </tr>
-      <tr>
-      <td style="width: 21%">	14:55 <td/><td> Keynote 8: <a target="_blank" href="https://www.oiermees.com/">  Sebastian Zudaire  </a> <br> <b> ABB Research Accelerates AI-enabled Robotic Applications and
-        Industrial Automation </b>
-      <br>
-      <a data-toggle="collapse" data-target="#abstract8" class="collapsed abstract" aria-expanded="false"> Abstract</a>
-      <div id="abstract6" class="news collapse" style="margin-top: 10px; height: 22px;" aria-expanded="false">
-        Recent developments in the fields of AI and Generative AI have enabled a new level of interaction between user and robot systems. For the first time the users can explain the task for the robot in fully unstructured natural language and robot motion can be generated accordingly. In this talk I will present activities conducted in ABB Corporate Research Center in Sweden that highlight different mechanisms in which AI and Generative AI can be introduced into robotic applications and industrial automation.</div>
-      </td>
-      </tr>
-      <tr>
-      <td style="width: 21%">	15:20 <td/><td> Panel Discussion <br> <b>Panelists:</b> Lihui Wang, Arash Ajoudani, Yali Du, Sebastian Zudaire </td>
-      </tr>
+              <tr>
+                <td style="width: 21%"> 10:00
+                  <td />
+                <td> Spotlight Talk I</td>
+              </tr>
+              <tr>
+                <td style="width: 21%"> 10:10
+                  <td />
+                <td> Coffee Break, Socializing, Posters </td>
+              </tr>
+              <tr>
+                <td style="width: 21%"> 10:40
+                  <td />
+                <td> Keynote 3: <a target="_blank" href="https://www.oiermees.com/"> Stefan Leutenegger </a> <br> <b>
+                    Real-World Mobile Robotics: from Perception to Navigation and
+                    Control in the Age of AI </b>
+                  <br>
+                  <a data-toggle="collapse" data-target="#abstract5" class="collapsed abstract" aria-expanded="false">
+                    Abstract</a>
+                  <div id="abstract5" class="news collapse" style="margin-top: 10px; height: 22px;"
+                    aria-expanded="false">
+                    To power the next generation mobile robots and drones, the field of spatial perception has made much
+                    progress from robust multi-sensor SLAM to dense, semantic, and object-level maps, with the aim of
+                    understanding open-ended environments as a basis for mobile robot navigation and environment
+                    interaction. I will show recent progress in reliable and real-time state estimation and 3D scene
+                    understanding using vision, LiDAR, IMUs, and more. Scenes to be reconstructed may contain dynamic
+                    objects and even people, whose poses, postures, and motions we can estimate in a tightly-coupled
+                    manner. In our works, we fully embrace the power of machine learning-based approaches, but typically
+                    integrated in modular, complex robotic systems that may include model-based methods as well. Our
+                    approaches are demonstrated as crucial enablers of a range of robot applications, from mobile
+                    manipulation on construction sites to dronesexploring obstructed indoor spaces or flying through the
+                    forest.
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 21%"> 11:05
+                  <td />
+                <td> Keynote 4: <a target="_blank" href="https://www.oiermees.com/"> Shugen Ma </a> <br> <b> Bioinspired
+                    Intelligent Snake Robots — Embodied Intelligence in
+                    a Multi-DOF Robot </b>
+                  <br>
+                  <a data-toggle="collapse" data-target="#abstract6" class="collapsed abstract" aria-expanded="false">
+                    Abstract</a>
+                  <div id="abstract6" class="news collapse" style="margin-top: 10px; height: 22px;"
+                    aria-expanded="false">
+                    Nature systems that have bodies with many degrees of freedom are often considered the ultimate
+                    models for machines. To confer the motion performance advantage of animal systems on robotic
+                    machines, we conducted in-depth studies on the motion characteristics of biological systems at the
+                    biomechanical level. We then used the insights that we obtained to develop intelligent biomimetic
+                    robots to achieve "intelligence," "environment adaptation," "flexibility," and "energy-saving." In
+                    this talk, I will introduce the bioinspired snake robots we have developed and discuss the evolution
+                    of their control methods, from shape-based to neural oscillator-based and then to embodied
+                    intelligence, to endow snake robots with motion intelligence.
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 21%"> 11:30
+                  <td />
+                <td> Panel Discussion <br> <b>Panelists:</b> Oier Mees, David Navarro-Alarcon, Stefan Leutenegger,
+                  Shugen Ma </td>
+              </tr>
+              <tr>
+                <td style="width: 21%"> 12:00
+                  <td />
+                <td> Lunch </td>
+              </tr>
 
-      <tr>
-        <td style="width: 21%">	16:00 <td/><td> Summary and interactive discussions <br>
-        </tr> 
-    <tr>
-    <td style="width: 21%"> 16:30 <td/><td> Organizers <br> <b> Closing Remarks </b>
-    </td>
-    </tr>
-    </tbody>
-    </table>
+              <tr>
+                <td style="width: 21%"> 13:00
+                  <td />
+                <td> Keynote 5: <a target="_blank" href="https://www.oiermees.com/"> Lihui Wang </a> <br> <b> From AI to
+                    AI-enabled Manufacturing </b>
+                  <br>
+                  <a data-toggle="collapse" data-target="#abstract1" class="collapsed abstract" aria-expanded="false">
+                    Abstract</a>
+                  <div id="abstract1" class="news collapse" style="margin-top: 10px; height: 22px;"
+                    aria-expanded="false">
+                    Smart manufacturing depends on the timely acquisition, distribution, and utilisation of information
+                    from machines and processes on manufacturing shop floors. This is especially true for factories of
+                    the future. Effective information sharing can improve production quality, reliability, resource
+                    efficiency and the recyclability of end-of-life products. Smart manufacturing built on
+                    digitalisation also aims for better sustainability. As emerging infrastructures, cyber-physical
+                    systems and cloud manufacturing provide new opportunities to achieve the goals of smart
+                    manufacturing, where digital twin and human-robot collaboration add values to manufacturing
+                    operations. For the sake of the audience with diverse background, the following topics will be
+                    covered, 1) latest advancement and future opportunities in smart manufacturing; 2) showcases of
+                    remote monitoring and control, and human-robot collaboration. While advanced technologies show great
+                    promise, challenges and future trends remain to be identified and will be highlighted in this
+                    introductory presentation, followed by a panel discussion.
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 21%"> 13:25
+                  <td />
+                <td> Keynote 6: <a target="_blank" href="https://www.oiermees.com/"> Arash Ajoudani </a> <br> <b> Sensor
+                    Substitution for Intelligent Manipulation using Machine
+                    Learning </b>
+                  <br>
+                  <a data-toggle="collapse" data-target="#abstract3" class="collapsed abstract" aria-expanded="false">
+                    Abstract</a>
+                  <div id="abstract3" class="news collapse" style="margin-top: 10px; height: 22px;"
+                    aria-expanded="false">
+                    Mobile manipulators are increasingly deployed in complex environments, where effective perception
+                    and control are crucial for interaction. However, equipping every robot with a full suite of sensors
+                    is often impractical due to cost and design constraints. This challenge is particularly evident in
+                    non-prehensile manipulation tasks—such as pushing, sliding, or rolling objects—where high-fidelity
+                    sensory feedback can significantly impact performance. In this talk, I will discuss how AI-driven
+                    approaches can enable robots to adapt to varying sensor configurations and improve non-prehensile
+                    manipulation. A key challenge arises when a robot trained with rich sensory inputs, such as tactile
+                    skin, needs to be replaced or augmented by a system with a more limited sensor set, like LiDAR or
+                    RGB-D cameras. To address this, we propose a machine learning framework that allows robots to
+                    substitute missing sensory inputs by learning a mapping between available perception data and the
+                    information provided by absent sensors. Beyond sensor substitution, AI models can enhance
+                    non-prehensile manipulation by learning robust policies that generalize across different sensing
+                    modalities and task variations. I will present experimental results demonstrating how mobile
+                    manipulators can leverage AI to perform complex pushing tasks with limited sensing, achieving
+                    performance comparable to or even exceeding that of robots using direct tactile feedback. This
+                    approach paves the way for more adaptable and cost-effective robotic systems capable of learning and
+                    optimizing their interactions in diverse environments.
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="width: 21%"> 13:50
+                  <td />
+                <td> Spotlight Talk II</td>
+              </tr>
+              <tr>
+                <td style="width: 21%"> 14:00
+                  <td />
+                <td> Coffee Break, Socializing, Posters </td>
+              </tr>
+              <tr>
+                <td style="width: 21%"> 14:30
+                  <td />
+                <td> Keynote 7: <a target="_blank" href="https://www.oiermees.com/"> Yali Du </a> <br> <b> RL/LLM for
+                    Multi-Agent Decision-Making and Robotics </b>
+                  <br>
+                  <a data-toggle="collapse" data-target="#abstract7" class="collapsed abstract" aria-expanded="false">
+                    Abstract</a>
+                  <div id="abstract5" class="news collapse" style="margin-top: 10px; height: 22px;"
+                    aria-expanded="false">
+                    From collaborative industrial robots to personal AI assistants, the integration of AI into our daily
+                    lives highlights the critical need for effective and reliable coordination among agents, as well as
+                    between agents and humans. This challenge centers on creating agents that not only align with user
+                    intentions but also possess the flexibility to adapt to evolving circumstances, such as the
+                    introduction of novel agents. The pursuit of multi-agent cooperation extends beyond individual
+                    interactions to encompass broader societal considerations. In this talk, I will discuss the
+                    challenges of cooperative AI, and our contributions on multi-agent cooperation, human-ai
+                    coordination and cooperative alignments.
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 21%"> 14:55
+                  <td />
+                <td> Keynote 8: <a target="_blank" href="https://www.oiermees.com/"> Sebastian Zudaire </a> <br> <b> ABB
+                    Research Accelerates AI-enabled Robotic Applications and
+                    Industrial Automation </b>
+                  <br>
+                  <a data-toggle="collapse" data-target="#abstract8" class="collapsed abstract" aria-expanded="false">
+                    Abstract</a>
+                  <div id="abstract6" class="news collapse" style="margin-top: 10px; height: 22px;"
+                    aria-expanded="false">
+                    Recent developments in the fields of AI and Generative AI have enabled a new level of interaction
+                    between user and robot systems. For the first time the users can explain the task for the robot in
+                    fully unstructured natural language and robot motion can be generated accordingly. In this talk I
+                    will present activities conducted in ABB Corporate Research Center in Sweden that highlight
+                    different mechanisms in which AI and Generative AI can be introduced into robotic applications and
+                    industrial automation.</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 21%"> 15:20
+                  <td />
+                <td> Panel Discussion <br> <b>Panelists:</b> Lihui Wang, Arash Ajoudani, Yali Du, Sebastian Zudaire
+                </td>
+              </tr>
+
+              <tr>
+                <td style="width: 21%"> 16:00
+                  <td />
+                <td> Summary and interactive discussions <br>
+              </tr>
+              <tr>
+                <td style="width: 21%"> 16:30
+                  <td />
+                <td> Organizers <br> <b> Closing Remarks </b>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
-    </section>
-    <br>
-    <hr class="half-rule"/>
-    <section id="callpapers" style="padding: 40px 0 0 0;">
+  </section>
+  <br>
+  <hr class="half-rule" />
+  <section id="callpapers" style="padding: 40px 0 0 0;">
     <div class="container">
-    <div class="row">
-    <div class="col-md-10 mx-auto">
-    <span class=titlesec>Call for Papers</span><br>
-  
-    <h5 style="font-weight: bold"> Submission Guidelines </h5>
-    IROS 2025 GenAI4Robotics suggests <b>2+N (short) or 4+N (full) paper length</b> formats — i.e., 2 or 4 pages of main content with unlimited additional pages for references, appendices, etc. <br><br>
-    Submissions will be handled through: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDPskxt_9enLWGdM-3BHri24igeLFg09A6aJBFNb8oXdmsJQ/viewform?usp=dialog" target="_blank">Call for Contributions</a><br><br>
-    We will accept the official <a target="_blank" href="https://www.ieee.org/conferences/publishing/templates.html"> IEEE conference</a> paper template.
-    <br><br>
-    <!-- Our review process will be <b>double-blind</b>, following the CoRL 2024 paper submission policy. -->
-    <br><br>
-    All accepted papers will be invited for poster presentations; the highest-rated papers, according to the Technical Program Committee, will be given spotlight presentations. Accepted papers will be made available online on this workshop website as <b>non-archival</b> reports, allowing authors to also submit their works to future conferences or journals. We will highlight the Best Reviewer and reveal the Best Paper Award during the closing remarks at the workshop event.<br><br>
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <span class=titlesec>Call for Papers</span><br>
 
-    Key areas we are targeting in this workshop include:</br>
-  </br>
-    <ul>
-    <li>AI-powered industrial digitalisation and automation</br>
-    <li>Human-robot collaboration enhanced by generative AI</br>
-    <li>Foundational models in robotics control and manipulation</br>
-    <li>VLM/LLM-driven robotic manufacturing/assembly systems</br>
-    <li>Data-efficient generative AI for robotics and manufacturing</br>
-    <li>Vision-language-conditioned robot navigation and manipulation</br>
-    <li>Generative models for robotic learning in manufacturing systems</br>
-    <li>Human-in-the-loop reinforcement learning for precision manipulation</br>
-    <li>Industrial large models and foundation models in smart manufacturing</br>
-  
+          <h5 style="font-weight: bold"> Submission Guidelines </h5>
+          IROS 2025 GenAI4Robotics suggests <b>2+N (short) or 4+N (full) paper length</b> formats — i.e., 2 or 4 pages
+          of main content with unlimited additional pages for references, appendices, etc. <br><br>
+          Submissions will be handled through: <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdDPskxt_9enLWGdM-3BHri24igeLFg09A6aJBFNb8oXdmsJQ/viewform?usp=dialog"
+            target="_blank">Call for Contributions</a><br><br>
+          We will accept the official <a target="_blank"
+            href="https://www.ieee.org/conferences/publishing/templates.html"> IEEE conference</a> paper template.
+          <br><br>
+          <!-- Our review process will be <b>double-blind</b>, following the CoRL 2024 paper submission policy. -->
+          <br><br>
+          All accepted papers will be invited for poster presentations; the highest-rated papers, according to the
+          Technical Program Committee, will be given spotlight presentations. Accepted papers will be made available
+          online on this workshop website as <b>non-archival</b> reports, allowing authors to also submit their works to
+          future conferences or journals. We will highlight the Best Reviewer and reveal the Best Paper Award during the
+          closing remarks at the workshop event.<br><br>
 
-    </ul>
+          Key areas we are targeting in this workshop include:</br>
+          </br>
+          <ul>
+            <li>AI-powered industrial digitalisation and automation</br>
+            <li>Human-robot collaboration enhanced by generative AI</br>
+            <li>Foundational models in robotics control and manipulation</br>
+            <li>VLM/LLM-driven robotic manufacturing/assembly systems</br>
+            <li>Data-efficient generative AI for robotics and manufacturing</br>
+            <li>Vision-language-conditioned robot navigation and manipulation</br>
+            <li>Generative models for robotic learning in manufacturing systems</br>
+            <li>Human-in-the-loop reinforcement learning for precision manipulation</br>
+            <li>Industrial large models and foundation models in smart manufacturing</br>
 
 
-    <!-- <h5 style="font-weight: bold"> Important Dates </h5>
+          </ul>
+
+
+          <!-- <h5 style="font-weight: bold"> Important Dates </h5>
     <ul>
     <li style="display: list-item">
     <s><b>Submission deadline:</b> <font color="#000000">15 October 2024</font>, 23:59 AOE.</s>
@@ -381,12 +621,12 @@
     <b>Workshop:</b> 9 November 2024, 08:30-12:00 CET
     </li>
     </ul> -->
+        </div>
+      </div>
     </div>
     </div>
     </div>
-    </div>
-    </div>
-    </section>
+  </section>
 
   <!-- <hr class="half-rule"/>
     <section id="papers">
@@ -567,36 +807,39 @@
         </div>
       </div>
     </section> -->
-    <hr class="half-rule"/>
-    <section id="organizers">
-      <div class="container">
+  <hr class="half-rule" />
+  <section id="organizers">
+    <div class="container">
       <div class="row">
         <div class="col-md-10 mx-auto">
           <span class=titlesec>Organizers</span><br>
           <div class="row">
             <a href="#">
               <div class="profpic xlarge-1 columns">
-                <img  src=./images/organizers/sichao.jpeg class="figure-img img-fluid ">
-                <p class=profname>  
-            <a href="https://sites.google.com/view/sichao-liu/home"> Sichao Liu </a> </p>
-            <p class=institution> University of Cambridge & EPFL </p>
-            </div>
+                <img src=./images/organizers/sichao.jpeg class="figure-img img-fluid ">
+                <p class=profname>
+                  <a href="https://sites.google.com/view/sichao-liu/home"> Sichao Liu </a>
+                </p>
+                <p class=institution> University of Cambridge & EPFL </p>
+              </div>
             </a>
             <a href="#">
               <div class="profpic xlarge-1 columns">
                 <img src=./images/organizers/chenguang.jpg class="figure-img img-fluid ">
                 <p class=profname>
-            <a href="http://www2.informatik.uni-freiburg.de/~huang/">Chenguang Huang</a></p>
-            <p class=institution>University of Technology Nuremberg</p>
-            </div>
+                  <a href="http://www2.informatik.uni-freiburg.de/~huang/">Chenguang Huang</a>
+                </p>
+                <p class=institution>University of Technology Nuremberg</p>
+              </div>
             </a>
             <a href="#">
               <div class="profpic xlarge-1 columns">
                 <img src=./images/organizers/hanzhi.jpg class="figure-img img-fluid ">
                 <p class=profname>
-            <a href="https://hanzhic.github.io/"> Hanzhi Chen </a> </p>
-            <p class=institution> Technical University of Munich </p>
-            </div>
+                  <a href="https://hanzhic.github.io/"> Hanzhi Chen </a>
+                </p>
+                <p class=institution> Technical University of Munich </p>
+              </div>
             </a>
           </div>
           <div class="row">
@@ -604,41 +847,45 @@
               <div class="profpic xlarge-1 columns">
                 <img src=./images/organizers/yuquan.jpeg class="figure-img img-fluid ">
                 <p class=profname>
-            <a href="https://ywang-robotics.github.io/">Yuquan Wang</a></p>
-            <p class=institution> Tencent Robotics X</p>
-            </div>
+                  <a href="https://ywang-robotics.github.io/">Yuquan Wang</a>
+                </p>
+                <p class=institution> Tencent Robotics X</p>
+              </div>
             </a>
             <a href="#">
               <div class="profpic xlarge-1 columns">
                 <img src=./images/organizers/pai.jpg class="figure-img img-fluid ">
                 <p class=profname>
-            <a href="https://www.polyu.edu.hk/ise/people/academic-staff/pai-zheng/">Pai Zheng</a></p>
-            <p class=institution> The Hong Kong Polytechnic University </p>
-            </div>
+                  <a href="https://www.polyu.edu.hk/ise/people/academic-staff/pai-zheng/">Pai Zheng</a>
+                </p>
+                <p class=institution> The Hong Kong Polytechnic University </p>
+              </div>
             </a>
             <a href="#">
               <div class="profpic xlarge-1 columns">
-                <img  src='./images/organizers/xiaolong.png' class="figure-img img-fluid ">
-                <p class="profname"> 
-            <a href="https://www.linkedin.com/in/dr-xiaolong-feng-263231a/"> Xiaolong Feng </a></p>
-            <p class=institution> ABB Corporate Research in Sweden </p>
-            </div>
+                <img src='./images/organizers/xiaolong.png' class="figure-img img-fluid ">
+                <p class="profname">
+                  <a href="https://www.linkedin.com/in/dr-xiaolong-feng-263231a/"> Xiaolong Feng </a>
+                </p>
+                <p class=institution> ABB Corporate Research in Sweden </p>
+              </div>
             </a>
             <a href="#">
               <div class="profpic xlarge-1 columns">
-                <img  src='./images/organizers/wolfram.jpeg' class="figure-img img-fluid ">
-                <p class="profname"> 
-            <a href="https://www.utn.de/person/wolfram-burgard-2/"> Wolfram Burgard </a></p>
-            <p class=institution> University of Technology Nuremberg </p>
-            </div>
-            </a>
-            </div>
+                <img src='./images/organizers/wolfram.jpeg' class="figure-img img-fluid ">
+                <p class="profname">
+                  <a href="https://www.utn.de/person/wolfram-burgard-2/"> Wolfram Burgard </a>
+                </p>
+                <p class=institution> University of Technology Nuremberg </p>
+              </div>
             </a>
           </div>
+          </a>
         </div>
       </div>
-    </section>
-    <!-- br>
+    </div>
+  </section>
+  <!-- br>
     <hr class="half-rule"/>
     <section id="tpc">
       <div class="container">
@@ -673,22 +920,25 @@
         </div>
       </div>
   </section -->
-    <br>
-    <hr class="half-rule"/>
-    <section id="contact">
-      <div class="container">
-        <div class="row" style="width:1100px;">
-          <!-- <div display="inline"><img src="https://llhomerobots.github.io/images/llhomerobots_logo.png" height="170px"></div> -->
-          <div style="display:inline; width:520px; align-items: center; vertical-align: bottom; padding:20px 0 0 0;">
-            <span class="titlesec">Contact and Information</span><br>
-            <span style="justify-content: left; text-align:left;">Direct questions to <a href="mailto:llhomerobots@gmail.com"> genai4robotics@gmail.com </a>.</span>
-            <br><br>
-            <span style="justify-content: left; text-align:left;">Subscribe to our <a target="_blank" href="https://mailchi.mp/07f8ab4c1c65/llhomerobots-workshop">mailing list</a> to stay updated on news from our workshop series.</span>
-          </div>
+  <br>
+  <hr class="half-rule" />
+  <section id="contact">
+    <div class="container">
+      <div class="row" style="width:1100px;">
+        <!-- <div display="inline"><img src="https://llhomerobots.github.io/images/llhomerobots_logo.png" height="170px"></div> -->
+        <div style="display:inline; width:520px; align-items: center; vertical-align: bottom; padding:20px 0 0 0;">
+          <span class="titlesec">Contact and Information</span><br>
+          <span style="justify-content: left; text-align:left;">Direct questions to <a
+              href="mailto:llhomerobots@gmail.com"> genai4robotics@gmail.com </a>.</span>
+          <br><br>
+          <span style="justify-content: left; text-align:left;">Subscribe to our <a target="_blank"
+              href="https://mailchi.mp/07f8ab4c1c65/llhomerobots-workshop">mailing list</a> to stay updated on news from
+            our workshop series.</span>
         </div>
       </div>
+    </div>
   </section>
-    <!-- <hr class="half-rule"/>
+  <!-- <hr class="half-rule"/>
       <section id="sponsors">
           <div class="container">
       	<div class="row">
@@ -699,16 +949,17 @@
       	</div>
       	</div>
       </section> -->
-    <!-- Footer -->
-    <!-- Bootstrap core JavaScript -->
-    <!-- 	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <!-- Footer -->
+  <!-- Bootstrap core JavaScript -->
+  <!-- 	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
       <script src="vendor/jquery/jquery.min.js"></script>
       <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <!-- Plugin JavaScript -->
-    <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> --> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js
+  <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> --> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js
       "> </script>
-    <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
-  </body>
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+</body>
+
 </html>
