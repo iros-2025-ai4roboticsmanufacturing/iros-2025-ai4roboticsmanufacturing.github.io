@@ -569,6 +569,556 @@
       </div>
     </div>
   </section>
+
+  <hr class="half-rule"/>
+    <section id="papers">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <span class=titlesec>Accepted Papers</span><br>
+            The following papers have been accepted for poster presentation and a spotlight talk at the workshop.
+
+            Authors should print and bring their own posters and at least one author must be present during the Poster Session. Posters discussions can be continued during the coffee break and the lunch. Posters should adhere to the IROS poster guidelines (no larger than 36 inches wide and 48 inches in height, <a target="_blank"
+            href="https://www.iros25.org/InstructionsOnAuthorsPresentationMaterials">link</a>). The author of the accepted paper can promote their work in a 1-minute spotlight talk. The authors are requested to submit a 1-slide presentation (pdf or ppt) for their spotlight talk before the 20th of October (23:59) by sending an email to <a href="mailto:genai4robotics@gmail.com">genai4robotics@gmail.com</a>. The organizers will display the slide during the spotlight talk.
+
+            <ul class="listpapers">
+              <li>
+                (Paper ID #1) ROBOVERSE: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning 
+                <span style="color: #ff8c00">(spotlight)</span>
+                <br>
+                <span class="authorname">
+                Haoran Geng, Feishi Wang, Songlin Wei, Yuyang Li, Bangjun Wang, Boshi An,
+                Charlie Tianyue Cheng, Haozhe Lou, Peihao Li, Yen-Jen Wang, Yutong Liang, Dylan Goetting,
+                Chaoyi Xu, Haozhe Chen, Yuxi Qian, Yiran Geng, Jiageng Mao, Weikang Wan, Mingtong Zhang,
+                Jiangran Lyu, Siheng Zhao, Jiazhao Zhang, Jialiang Zhang, Chengyang Zhao, Haoran Lu,
+                Yufei Ding, Ran Gong, Yuran Wang, Yuxuan Kuang, Ruihai Wu, Baoxiong Jia, Carlo Sferrazza,
+                Hao Dong, Siyuan Huang, Yue Wang, Jitendra Malik, Pieter Abbeel
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract1" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract1" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                    Data scaling and standardized evaluation benchmarks have driven significant advances in natural language processing and computer vision. However, robotics faces unique
+                    challenges in scaling data and establishing reliable evaluation
+                    protocols. Collecting real-world robotic data is resource-intensive
+                    and inefficient, while benchmarking in real-world scenarios
+                    remains highly complex. Synthetic data and simulation offer
+                    promising alternatives, yet existing efforts often fall short in data
+                    quality, diversity, and benchmark standardization. To address
+                    these challenges, we introduce ROBOVERSE , a comprehensive
+                    framework comprising a simulation platform, a synthetic dataset,
+                    and unified benchmarks. Our simulation platform supports
+                    multiple simulators and robotic embodiments, enabling seamless
+                    transitions between different environments. The synthetic dataset,
+                    featuring high-fidelity physics and photorealistic rendering, is
+                    constructed through multiple approaches including migration
+                    from public datasets, policy rollout, and motion planning,
+                    etc. enhanced by data augmentation. Additionally, we propose
+                    unified benchmarks for imitation learning and reinforcement
+                    learning, enabling consistent evaluation across different levels of
+                    generalization. At the core of the simulation platform is M ETA S IM ,
+                    an infrastructure that abstracts diverse simulation environments
+                    into a universal interface. It restructures existing simulation
+                    environments into a simulator-agnostic configuration system, as
+                    well as an API aligning different simulator functionalities, such
+                    as launching simulation environments, loading assets with initial
+                    states, stepping the physics engine, etc. This abstraction ensures
+                    interoperability and extensibility. Comprehensive experiments
+                    demonstrate that ROBOVERSE enhances the performance of imi-
+                    tation learning, reinforcement learning, and world model learning,
+                    improving sim-to-real transfer. These results validate the reliability
+                    of our dataset and benchmarks, establishing RoboVerse as a robust
+                    solution for advancing simulation-assisted robot learning. Code
+                    and dataset can be found at: https://roboverseorg.github.io/.
+                  </div>
+                  <br>
+              </li>
+              <li>
+                (Paper ID #2) RobotGPT-Weld: A Foundation-Model-Driven Pipeline from CAD
+                Weld Seam Extraction to Robotic Program Generation in Shipyards
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a> -->
+                <!-- <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Xiwei Wu, Wei Wu, Tian Li, Changjin Yan, Yuda Cao, George Q. Huang
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract2" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract2" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                    Small and mid-sized shipyards still rely on manual
+                    robot programming for welding, which increases labor and training costs, and leads to inconsistent quality. To achieve welding
+                    automation and close the gap from seam extraction to executable
+                    code with minimal manual work, a large-language-model (LLM)-
+                    based CAD-to-robot workflow is introduced with two coordinated
+                    pipelines, TrajectoryGPT and RobotGPT. TrajectoryGPT parses
+                    CAD models, detects weld seams, infers their geometry, and plans
+                    the welding sequence using shipbuilding knowledge, then forms
+                    weld paths. RobotGPT takes these paths and generates vendor-specific robot programs and welding settings, performs motion
+                    and safety checks, applies postprocessing and static analysis.
+                    Case studies show accurate seam extraction, large reductions
+                    in programming time, and reliable execution on a UR5e robot.
+                    The proposed approach offers a practical route to low-cost, fast-
+                    deployable welding automation in small and mid-sized shipyards,
+                    and builds a foundation for scaling to more ship types and
+                    processes.
+                  </div>
+                  <br>
+              </li>
+              <li>
+                (Paper ID #3) An AR-Guided Framework for Low-Code Robotic
+                Drilling Using Large Language Models
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a>
+                <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Wenhang Dong, Pai Zheng
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract3" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract3" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                    This paper introduces an intelligent robotic drilling
+                    system driven by Augmented Reality (AR) and natural language,
+                    designed to address the challenges of conventional robotic drilling
+                    solutions in large-scale aircraft manufacturing. The system utilizes AR technology for intuitive point calibration and fine-
+                    tuning, and leverages a Large Language Model (LLM) to convert
+                    natural language commands into machine-executable process
+                    parameters in real-time. This ultimately establishes a low-code,
+                    highly flexible, and high-precision automated drilling framework.
+                    The approach not only significantly reduces the complexity
+                    and deployment costs of human-robot collaboration but also
+                    advances the deep application of virtual-real fusion technology
+                    in manufacturing field.
+                  </div>
+                  <br>
+              </li>
+              <li>
+                (Paper ID #4) Dual robots collaborative knotting of metal wire
+                based  on multi-modal data and metal rebound model
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a> -->
+                <!-- <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Yiyang Hu, Bitao Yao, Wenjun Xu
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract4" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract4" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                    The tasks of operating deformable linear objects
+                    (DLOs) are mostly completed manually. This article deals with
+                    operations of DLOs, such as knotting of metal wire, adopting
+                    two collaborative robots to accomplish the knotting processes of
+                    flexible wires. Binocular vision is applied to extract wire
+                    features, with 3D reconstruction achieved through particle
+                    swarm optimization algorithm. For trajectory planning, a
+                    rebound prediction model is constructed based on the material
+                    properties of the wire, integrated with acquired visual
+                    information to realize trajectory planning with obstacle
+                    avoidance for dual robots. To enhance knotting quality, hybrid
+                    force-position control is implemented for the robotic control
+                    incorporating fuzzy logic. Experimental results show the
+                    effectiveness of the knotting method.
+                  </div>
+                  <br>
+              </li>
+              <li>
+                (Paper ID #5) LEMMo-Plan: LLM-Enhanced Learning from Multi-Modal Demonstration
+                for Planning Sequential Contact-Rich Manipulation Tasks
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a> -->
+                <!-- <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Kejia Chen, Zheng Shen, Yue Zhang, Lingyun Chen,
+                Fan Wu, Zhenshan Bing, Sami Haddadin, Alois Knoll
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract5" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract5" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                    Large Language Models (LLMs) have gained
+                    popularity in task planning for long-horizon manipulation
+                    tasks. To enhance the validity of LLM-generated plans, visual
+                    demonstrations and online videos have been widely employed
+                    to guide the planning process. However, for manipulation tasks
+                    involving subtle movements but rich contact interactions, visual
+                    perception alone may be insufficient for the LLM to fully
+                    interpret the demonstration. Additionally, visual data provides
+                    limited information on force-related parameters and conditions,
+                    which are crucial for effective execution on real robots.
+                    In this paper, we introduce LEMMo-Plan, an in-context
+                    learning framework that incorporates tactile and force-torque
+                    information from human demonstrations to enhance LLMs’
+                    ability to generate plans for new task scenarios. We propose
+                    a bootstrapped reasoning pipeline that sequentially integrates
+                    each modality into a comprehensive task plan. This task
+                    plan is then used as a reference for planning in new task
+                    configurations. Real-world experiments on two different sequential manipulation tasks demonstrate the effectiveness of
+                    our framework in improving LLMs’ understanding of multi-
+                    modal demonstrations and enhancing the overall planning
+                    performance. More materials are available on our project
+                    website: lemmo-plan.github.io/LEMMo-Plan/.
+                  </div>
+                  <br>
+              </li>
+              <li>
+                (Paper ID #6) LOOP: Language Oriented Object Packing with
+                Diffusion Models
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a>
+                <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Anurag Maurya, Shashwat Gupta, Sandip Das, Shivam Vats, Ravi Prakash
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract6" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract6" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                    The irregular bin packing problem is a well-known
+                    NP-hard challenge with significant applications in logistics and
+                    manufacturing. Traditional methods often rely on hand-crafted
+                    heuristics, which can be inflexible in accommodating complex
+                    or customizable preferences. Conversely, purely learning-based
+                    approaches often require task-specific training data. We propose
+                    LOOP: a physics-aware bin packing framework that combines
+                    diffusion sampling with simulator-based physics integration. We
+                    further extend the framework by leveraging pretrained large
+                    language models (LLMs) as interpreters of natural language
+                    preferences. We use a barrier function formulation to encode
+                    object preferences. The LLM defines preferred placements and
+                    constrained regions for each object. LOOP allows for zero-
+                    shot adaptation to user preferences while maintaining physically
+                    plausible packing solutions.
+                  </div>
+                  <br>
+              </li>
+              <li>
+                (Paper ID #7) Fast ECoT: Efficient Embodied Chain-of-Thought via Thoughts Reuse
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a>
+                <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Zhekai Duan, Yuan Zhang, Shikai Geng, Gaowen Liu, Joschka Boedecker, Chris Xiaoxuan Lu
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract7" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract7" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                    Embodied Chain-of-Thought (ECoT) reasoning
+                    enhances vision-language-action (VLA) models by improving
+                    performance and interpretability through intermediate reasoning steps. However, its sequential autoregressive token generation introduces significant inference latency, limiting real-time deployment. We propose Fast ECoT, an inference-time
+                    acceleration method that exploits the structured and repetitive
+                    nature of ECoT to (1) cache and reuse high-level reasoning
+                    across timesteps and (2) parallelise the generation of modular
+                    reasoning steps. Additionally, we introduce an asynchronous
+                    scheduler that decouples reasoning from action decoding, further boosting responsiveness. Fast ECoT requires no model
+                    changes or additional training and easily integrates into existing
+                    VLA pipelines. Experiments in both simulation (LIBERO) and
+                    real-world robot tasks show up to a 7.5× reduction in latency
+                    with comparable or improved task success rate and reasoning
+                    faithfulness, bringing ECoT policies closer to practical real-time
+                    deployment. The code will be released upon acceptance.
+                  </div>
+                  <br>
+              </li>
+              <li>
+                (Paper ID #8) Collision-Aware Motion Planning with Time-Varying SDF for
+                Robot-Assisted Multi-Axis Additive Manufacturing
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a>
+                <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Jiasheng Qu, Zhikai Shen, Guoxin Fang
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract8" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract8" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                    Collision checking and avoidance are critical challenges in robotic motion planning for multi-axis additive man-
+                    ufacturing (MAAM) due to the dynamically changing printing
+                    object. To address this, we propose the Time-Varying Signed
+                    Distance Field (TV-SDF), a training-free method for dynamic
+                    object representation via neural field interpolation. The TV-
+                    SDF enables efficient modeling and differentiable motion planning for collision avoidance, ensuring successful collision-free
+                    fabrication. Additionally, by training a neural quaternion field
+                    that integrates motion and fabrication constraints, the motion is
+                    optimized for smooth, collision-free planning while maintaining
+                    the support-free condition. Both computational and physical
+                    experiments demonstrate the effectiveness of the proposed
+                    method. Project page: https://qjiasheng.github.io/
+                    crml/inf3dp/.
+                  </div>
+                  <br>
+              </li>
+              <li>
+                (Paper ID #9) Generative AI-Driven Robot Skill Learning and
+                Human-Guided Transfer for Smart Assembly
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a>
+                <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Duidi Wu, Qianyou Zhao, Pai Zheng, Jin Qi, Jie Hu
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract9" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract9" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                   The emergence of Industry 5.0 emphasizes human-
+                    centric smart manufacturing, yet achieving natural and adaptive
+                    human-robot interaction remains challenging. Current advances
+                    in generative AI (GenAI) such as large language models provide
+                    promising ways for language-guided planning and decision-
+                    making, but their application in contact-rich, safety-critical
+                    industrial tasks is still limited. This paper explores how GenAI
+                    combined with embodied agents can overcome these limitations.
+                    A set of paradigms are proposed: vision–language–action model
+                    for integrated perception and execution, LLM-driven reward
+                    generation for assembly skill learning, and VR-assisted generative
+                    imitation for human–robot skill transfer. The effectiveness is
+                    demonstrated in simulation and real-world settings, highlighting
+                    their practical applicability.
+                  </div>
+                  <br>
+              </li>
+              <li>
+                (Paper ID #10) LLM-assisted cross-modal deep learning for spatial
+                disassembly constraint modelling in
+                remanufacturing bolster springs
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a>
+                <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Wupeng Deng, Daode Zhang, Kaiwen Jiang, Yongjing Wang, Duc Truong Pham
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract10" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract10" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                    Autonomous robotic disassembly requires
+                    accurate modelling of spatial disassembly constraints. This
+                    paper proposes an LLM-assisted cross-modal deep learning
+                    method for remanufacturing, in which the CAD models and
+                    captured images are linked by leveraging the semantic
+                    modelling capability of LLMs. We first develop a two-stream
+                    deep learning module to extract labels and positions of
+                    components based on the captured images for products and
+                    section views for CAD models. The image-based detected results
+                    and CAD-based detected results are used to construct the
+                    semantic graph in the same comparable space using LLMs.
+                    Finally, the CAD-based semantic graph that is most similar to
+                    the image-based semantic graph is employed to retrieve the
+                    spatial disassembly constraints from the knowledge base. The
+                    proposed method is implemented on recycling used bolster
+                    springs, demonstrating the strong capability in constructing and
+                    comparing semantic graphs in the cross-modal space. With the
+                    LLM techniques, the disassembly constraints can be
+                    automatically constructed to enable robotic disassembly.
+                  </div>
+                  <br>
+              </li>
+              <li>
+                (Paper ID #11) InstructTODG: A Multimodal LLMs-driven
+                Approach for Task-oriented Dexterous Grasping in
+                Unstructured Human-Robot Collaborative
+                Manufacturing
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a>
+                <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Benhua Gao, Tian Wang, Benhua Gao, Tian Wang, Zeyuan Ren, Pai Zheng
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract11" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract11" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                    Human-robot collaborative manufacturing (HRCM)
+                    requires robots not only to perform stable and precise grasps,
+                    but also to align with task-specific human instructions. However, most existing dexterous grasping approaches emphasize
+                    geometric stability while neglecting instruction alignment and
+                    affordance awareness. To address this challenge, we propose
+                    InstructTODG, a multimodal large language model (MLLM)-
+                    driven framework for task-oriented dexterous grasping in unstructured HRC environments. InstructTODG first employs an
+                    MLLM-based reasoning module enhanced with visual prompts
+                    to interpret human instructions and identify target objects
+                    with associated affordances. A zero-shot coarse-to-fine 6D object
+                    pose estimation network is then introduced to recover object
+                    geometry and spatial pose. Finally, a language-guided affordance
+                    grounding module segments task-relevant regions, which are used
+                    as conditions for generative models to synthesize coordinated
+                    wrist poses and finger joint configurations. Experimental results
+                    in both simulation and real-world scenarios demonstrate that
+                    InstructTODG enables instruction-aligned, functional, and stable
+                    dexterous grasps, significantly enhancing robot manipulation
+                    capabilities and advancing human-robot collaboration in complex
+                    manufacturing tasks.
+                  </div>
+                  <br>
+              </li>
+              <li>
+                (Paper ID #12) MetaFold: Language-Guided Multi-Category Garment Folding
+                Framework via Trajectory Generation and Foundation Model
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a>
+                <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Haonan Chen, Junxiao Li, Ruihai Wu, Yiwei Liu, Yiwen Hou, Zhixuan Xu,
+                Jingxiang Guo, Chongkai Gao, Zhenyu Wei, Shensi Xu, Jiaqi Huang, Lin Shao
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract12" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract12" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                  Garment folding is a common yet challenging task
+                  in robotic manipulation. The deformability of garments leads
+                  to a vast state space and complex dynamics, which complicates precise and fine-grained manipulation. In this paper, we
+                  present MetaFold, a unified framework that disentangles task
+                  planning from action prediction and learns each independently
+                  to enhance model generalization. It employs language-guided
+                  point cloud trajectory generation for task planning and a low-
+                  level foundation model for action prediction. This structure
+                  facilitates multi-category learning, enabling the model to adapt
+                  flexibly to various user instructions and folding tasks. We also
+                  construct a large-scale MetaFold dataset comprising folding
+                  point cloud trajectories for a total of 1210 garments across
+                  multiple categories, each paired with corresponding language
+                  annotations. Extensive experiments demonstrate the superiority
+                  of our proposed framework. Supplementary materials are
+                  available on our website: https://meta-fold.github.io/.
+                  </div>
+                  <br>
+              </li>
+
+
+              <li>
+                (Paper ID #13) MetricNet: Recovering Metric Scale in Generative Navigation Policies
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a>
+                <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Abhijeet Nayak, Débora N.P. Oliveira, Samiran Gode, Cordelia Schmid, Wolfram Burgard
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract13" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract13" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                  Generative navigation policies have made rapid
+                  progress in improving end-to-end learned navigation. Despite
+                  their promising results, this paradigm has two structural
+                  problems. First, the sampled trajectories exist in an abstract,
+                  unscaled space without metric grounding. Second, the control
+                  strategy discards the full path, instead moving directly towards
+                  a single waypoint. This leads to short-sighted and unsafe
+                  actions, moving the robot towards obstacles that a complete
+                  and correctly scaled path would circumvent. To address these
+                  issues, we propose MetricNet, an effective add-on for generative
+                  navigation that predicts the metric distance between waypoints,
+                  grounding policy outputs in real-world coordinates. We evaluate
+                  our method in simulation with a new benchmarking framework
+                  and show that executing MetricNet-scaled waypoints significantly improves both navigation and exploration performance.
+                  Beyond simulation, we further validate our approach in real-world experiments. Finally, we propose MetricNav, which
+                  integrates MetricNet into a navigation policy to guide the robot
+                  away from obstacles while still moving towards the goal.
+                  </div>
+                  <br>
+              </li>
+              <li>
+                (Paper ID #14) A Modular Vision-Language-Action Framework for
+                Robotic Task Automation in Indoor Environments
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a>
+                <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Anindya Jana, Snehasis Banerjee, Arup Sadhu, Ranjan Dasgupta
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract14" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract14" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                  This paper presents an integrated system for Vision-
+                  Language-Action (VLA) tasks, designed to enable an autonomous
+                  mobile robot to perform complex operations in structured in-door environments based on natural language instructions. Our
+                  framework employs a modular architecture that orchestrates
+                  environment mapping, language processing, and navigation. The
+                  system operates in two parallel streams: a perception pipeline
+                  that constructs a semantic voxel map from real-time camera
+                  feeds using OwlViT embeddings, and a language pipeline that
+                  classifies user commands with a Vision-Language Model (VLM).
+                  The mapping phase is time-constrained to ensure responsiveness,
+                  proceeding with a partial map if a predefined exploration limit is
+                  reached. The classified query is then grounded in the geometric
+                  and semantic context of the map to generate a detailed prompt
+                  for the VLM. This yields an actionable output, demonstrating a
+                  capable solution for flexible robotic automation.
+                  </div>
+                  <br>
+              </li>
+              <li>
+                (Paper ID #15) Towards Logic-Aware Manipulation: Knowledge
+                  Primitive for VLMs in Smart Manufacturing
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a>
+                <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Suchang Chen, Daqiang Guo
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract15" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract15" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                    Current pipelines for vision-language models
+                    (VLMs) in robotic manipulation unlocked broad semantic generalization with appearance cues and generic instructions, while
+                    omitting the process parameters that make contact-rich manipulation succeed in manufacturing, including interface mecha-
+                    nism, contact modality, trajectory shaping, precision bands, and
+                    force/impedance. We present an object-centric manipulation logic
+                    schema, serialize it as an 8-field tuple τ and define it as a first-class knowledge signal. The schema enables two concrete uses:
+                    at training time, taxonomy-tagged augmentation that teaches
+                    models how to operate device interfaces; at test time, logic-aware prompting with retrieval from a compact knowledge
+                    base to inject instance-specific constraints. This position paper
+                    specifies the schema, sketches a minimal pipeline, and outlines
+                    a compact evaluation protocol targeting first-try success, fewer
+                    force-limit violations, and clearer failure attribution on novel
+                    devices. The schema covers both contact-rich and precision-sensitive tasks and is designed for practical deployment in
+                    collaborative manufacturing cells.
+                  </div>
+                  <br>
+              </li>
+
+              <li>
+                (Paper ID #16) HRI-DGDM: Dual-Graph Guided Diffusion Model for Uncertain
+                Human Motion Modeling in HRI
+                <!-- <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a>
+                <span style="color: #ff8c00">(spotlight)</span> -->
+                <br>
+                <span class="authorname">
+                Hongquan Gui, Zhanpeng Yang, Xiaoxuan Gan, Ming Li
+                </span>
+               <br>
+                <a data-toggle="collapse" data-target="#abstract16" class="collapsed abstract" aria-expanded="false"> Abstract</a>
+                  <div id="abstract16" class="news collapse" style="margin-top: 10px; height: 22px; font-weight: normal;" aria-expanded="false">
+                  Human motion in human-robot interaction (HRI)
+                  is inherently uncertain, even when performing the same task
+                  repeatedly. This variability poses a significant challenge for
+                  prediction, as models must capture a distribution of plausible
+                  futures rather than a single deterministic trajectory. Traditional
+                  graph convolutional network based models, while effective at
+                  capturing spatial temporal dependencies, are fundamentally
+                  limited by their deterministic nature and struggle to represent
+                  this inherent motion uncertainty. To address this, diffusion
+                  models have emerged as a powerful framework for modeling
+                  uncertainty. However, their direct application to HRI is hindered
+                  by two key limitations: they often prioritize motion diversity over
+                  prediction accuracy, potentially generating physically
+                  implausible results, and they fail to adequately model the
+                  complex, multi-scale spatial temporal coupling between human
+                  and robot motions. To overcome these challenges, we propose
+                  HRI-DGDM, a HRI motion prediction framework based on a
+                  dual-graph guided diffusion model. Our method introduces a
+                  dual-graph structure—comprising a structural graph for
+                  kinematic priors and a collaboration graph learned from motion
+                  dynamics—to guide the denoising process with strong structural
+                  priors. A dedicated spatial temporal denoising network (STDN)
+                  fuses multi-scale features from both graphs through adaptive
+                  fusion and hierarchical spatial temporal modeling. Furthermore,
+                  a masking-based conditioning mechanism anchors the observed
+                  history during denoising, ensuring temporal consistency and
+                  preventing drift. Experiments on HRI scenarios demonstrate
+                  that HRI-DGDM outperforms baselines in prediction accuracy.
+                  </div>
+                  <br>
+              </li>
+ 
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
   <br>
   <hr class="half-rule" />
   <section id="callpapers" style="padding: 40px 0 0 0;">
@@ -617,7 +1167,7 @@
     <b>Submission deadline:</b> <font color="#000000">1 October, 2025</font>, 23:59 AOE.
     </li>
     <li style="display: list-item">
-    <b>Author Notifications:</b> 5 October 2025, 23:59 AOE.
+    <b>Author Notifications:</b> 6 October 2025, 23:59 AOE.
     </li>
     <!-- <li style="display: list-item">
     <s><b>Camera Ready:</b> 3 November 2024, 23:59 AOE.</s>
@@ -633,185 +1183,6 @@
     </div>
   </section>
 
-  <!-- <hr class="half-rule"/>
-    <section id="papers">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 mx-auto">
-            <span class=titlesec>Accepted Papers</span><br>
-            <ul class="listpapers">
-              <li>
-                (Paper ID #1) FLaRe: Achieving Masterful and Adaptive Robot Policies with Large-Scale Reinforcement Learning Fine-Tuning
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_1.pdf" target="_blank"> [paper]</a>
-                <span style="color: #ff8c00">(spotlight)</span>
-                <br>
-                <span class="authorname">
-                Jiaheng Hu, Rose Hendrix, Ali Farhadi, Aniruddha Kembhavi, Roberto Martin-Martin, Peter Stone, Kuo-Hao Zeng, Kiana Ehsani
-                </span>
-              </li>
-              <li>
-                (Paper ID #2) Robot Utility Models: General Policies for Zero-Shot Deployment in New Environments
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_2.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Haritheja Etukuru, Norihito Naka, Zijin Hu, Seungjae Lee, Julian Mehu, Aaron Edsinger, Christopher Paxton, Soumith Chintala, Lerrel Pinto, Nur Muhammad (Mahi) Shafiullah
-                </span>
-              </li>
-              <li>
-                (Paper ID #3) Learning Precise, Contact-Rich Manipulation through Uncalibrated Tactile Skins
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_3.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Venkatesh Pattabiraman, Yifeng Cao, Siddhant Haldar, Lerrel Pinto, Raunaq M Bhirangi
-                </span>
-              </li>
-              <li>
-                (Paper ID #4) AnySkin: Plug-and-play Skin Sensing for Robotic Touch
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_4.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Raunaq M Bhirangi, Venkatesh Pattabiraman, Enes Erciyes, Yifeng Cao, Tess Hellebrekers, Lerrel Pinto
-                </span>
-              </li>
-              <li>
-                (Paper ID #5) Local Policies Enable Zero-shot Long-horizon Manipulation
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_5.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Murtaza Dalal, Min Liu, Walter Talbott, Chen Chen, Deepak Pathak, Jian Zhang, Ruslan Salakhutdinov
-                </span>
-              </li>
-              <li>
-                (Paper ID #6) Embodied-RAG: General Non-parametric Embodied Memory for Retrieval and Generation
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_6.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Quanting Xie, So Yeon Min, Tianyi Zhang, Kedi Xu, Aarav Bajaj, Ruslan Salakhutdinov, Matthew Johnson-Roberson, Yonatan Bisk
-                </span>
-              </li>
-              <li>
-                (Paper ID #7) DynaMem: Online Dynamic Spatio-Semantic Memory for Open World Mobile Manipulation
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_7.pdf" target="_blank"> [paper]</a>
-                <span style="color: #ff8c00">(spotlight)</span>
-                <span style="color: #ff0000">(best paper award!)</span>
-                <br>
-                <span class="authorname">
-                Peiqi Liu, Zhanqiu Guo, Mohit Warke, Soumith Chintala, Christopher Paxton, Nur Muhammad (Mahi) Shafiullah, Lerrel Pinto
-                </span>
-              </li>
-              <li>
-                (Paper ID #8) Multi-Modal 3D Scene Graph Updater for Shared and Dynamic Environments
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_8.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Emilio Olivastri, Jonathan Francis, Alberto Pretto, Niko Sünderhauf, Krishan Rana
-                </span>
-              </li>
-              <li>
-                (Paper ID #9) Online Continual Learning for Interactive Instruction Following Agents
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_9.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Byeonghwi Kim, MinHyuk Seo, Jonghyun Choi
-                </span>
-              </li>
-              <li>
-                (Paper ID #10) Continuously Improving Mobile Manipulation with Autonomous Real-World RL
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_10.pdf" target="_blank"> [paper]</a>
-                <span style="color: #ff8c00">(spotlight)</span>
-                <br>
-                <span class="authorname">
-                Russell Mendonca, Emmanuel Panov, Bernadette Bucher, Jiuguang Wang, Deepak Pathak
-                </span>
-              </li>
-              <li>
-                (Paper ID #11) STEVE-Audio: Expanding the Goal Conditioning Modalities of Embodied Agents in Minecraft
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_11.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Nicholas Lenzen, Amogh Prashant Raut, Andrew Melnik
-                </span>
-              </li>
-              <li>
-                (Paper ID #12) Learning from Demonstrations with 3D Gaussian Splatting
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_12.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Michael Büttner, Jonathan Francis, Helge Rhodin, Andrew Melnik
-                </span>
-              </li>
-              <li>
-                (Paper ID #13) Parental Guidance: Efficient Lifelong Learning through Evolutionary Distillation
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_13.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Zhengyu Zhang, Quanquan Peng, Rosario Scalise, Bryon Boots
-                </span>
-              </li>
-              <li>
-                (Paper ID #14) OLiVia-Nav: An Online Lifelong Vision Language Approach for Mobile Robot Social Navigation
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_14.pdf" target="_blank"> [paper]</a>
-                <span style="color: #ff8c00">(spotlight)</span>
-                <br>
-                <span class="authorname">
-                Siddarth Narasimhan, Aaron H Tan, Daniel Choi, Goldie Nejat
-                </span>
-              </li>
-              <li>
-                (Paper ID #15) BYE: Build Your Encoder with One Sequence of Exploration Data for Long-Term Dynamic Scene Understanding and Navigation
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_15.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Chenguang Huang, Wolfram Burgard
-                </span>
-              </li>
-              <li>
-                (Paper ID #16) LaNMP: A Language-Conditioned Mobile Manipulation Benchmark for Autonomous Robots
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_16.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Ahmed Jaafar, Shreyas Sundara Raman, Yichen Wei, Sofia Juliani, Anneke Wernerfelt, Benedict Quartey, Ifrah Idrees, Jason Liu, Stefanie Tellex
-                </span>
-              </li>
-              <li>
-                (Paper ID #17) Out-of-Distribution Recovery with Object-Centric Keypoint Inverse Policy For Visuomotor Imitation Learning
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_17.pdf" target="_blank"> [paper]</a>
-                <span style="color: #ff8c00">(spotlight)</span>
-                <br>
-                <span class="authorname">
-                George Gao, Tianyu Li, Nadia Figueroa
-                </span>
-              </li>
-              <li>
-                (Paper ID #19) Cognitive Planning for Object Goal Navigation using Generative AI Models
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_19.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Arjun P S, Andrew Melnik, G C Nandi
-                </span>
-              </li>
-              <li>
-                (Paper ID #20) Visual Rearrangement in Embodied AI with 3D Gaussian Splatting and Dense Feature Matching
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_20.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Arjun P S, Andrew Melnik, G C Nandi
-                </span>
-              </li>
-              <li>
-                (Paper ID #21) 2HandedAfforder: Learning Precise Actionable Bimanual Affordances from Human Videos
-                <a class="linkpaper" href="./docs/corl_llhomerobots_2024-cr_paper_21.pdf" target="_blank"> [paper]</a>
-                <br>
-                <span class="authorname">
-                Marvin Heidinger, Snehal Jauhri, Vignesh Prasad, Georgia Chalvatzaki
-                </span>
-              </li>
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section> -->
   <hr class="half-rule" />
   <section id="organizers">
     <div class="container">
